@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding-left: 15px ;
+    padding-right: 15px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* media */
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* the end of the media */
+  /* the start of the head  */
+  .head{
+      height: 600px;
+      width: 100%;
+      background-color: aqua;
+  }
+  .head .nav-bar .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .head .nav-bar{
+    background-color: bisque;
+    width: 100%;
+  }
+  .head .nav-bar img{
+      width: 60px;
+  }
+  .head  .nav-bar .list{
+      width: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+  }
+  .head  .nav-bar .list span{
+      height: 2px;
+      margin-bottom: 5px;
+      background-color: black;
+  }
+  .head  .nav-bar .list span:last-child{
+      width: 100%;
+  }
+  .head  .nav-bar .list span:first-child{
+      width: 100%;
+  }
+  .head  .nav-bar .list span:nth-child(2){
+      width: 60%;
+      transition: .3s;
+      -webkit-transition: .3s;
+      -moz-transition: .3s;
+      -ms-transition: .3s;
+      -o-transition: .3s;
+}
+.head  .nav-bar .links:hover .list span:nth-child(2){
+    width: 100%;
+}
+.head  .nav-bar  .links{
+    position: relative;
+}
+.head  .nav-bar  .links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    background-color: rgb(235, 233, 225);
+    position: absolute;
+    right: 20px;
+    top: calc(100%+15px);
+    transition: .5s;
+    display: none;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.head  .nav-bar  .links:hover ul{
+    display: block;
+}
+.head .nav-bar  .links ul li{
+    margin-bottom: 15px;
+}
+.head .nav-bar  .links ul li a{
+    text-decoration: none;
+    padding:15px ;
+    display: block;
+    color: #ddd;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.head .nav-bar  .links ul li a:hover{
+    padding-left: 15px;
+}
+.head .nav-bar  .links ul li:not(:last-child) a{
+    border-bottom: 1px solid #ddd;
+}
+  /* the end of the head */
