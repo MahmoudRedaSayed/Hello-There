@@ -58,7 +58,7 @@ html{
     list-style-type: none;
     display: none;
     position: absolute;
-    background-color: red;
+    background-color: rgb(226, 220, 220);
     min-width: 200px;
     text-align: left;
     top: calc(100% +50px);
@@ -494,6 +494,6 @@ html{
     text-transform: capitalize;
 }
 .foot span{
-    color:var(--main-color)
+    color:var(--main-color);
 }
 /* the end of the footer */
